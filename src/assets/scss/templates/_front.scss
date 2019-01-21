@@ -5,23 +5,52 @@
     @include xy-grid;
   }
 
+
   @include breakpoint(small) {
-    background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
+    background: url('../images/demo/hero-bg-foundation-6-large-01.svg') bottom center;
     background-size: cover;
     background-position: bottom;
-    padding: rem-calc(65%) 0;
-    margin: 0 0 rem-calc(32);
+    padding: rem-calc(50%) 0;
+    margin: 0 0 rem-calc(15);
     height: auto;
     position: relative;
     text-align: left;
   }
 
   @include breakpoint(medium) {
-    background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
+    background: url('../images/demo/hero-bg-foundation-6-large-01.svg') bottom center;
     background-size: cover;
     background-position: center;
-    height: rem-calc(685);
-    margin: 0 0 rem-calc(72);
+    height: rem-calc(550);
+    margin: 0 0 rem-calc(50);
+  }
+
+  .wwfp_col1 {
+    @include breakpoint(small) {
+      @include xy-cell(7);
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(7);
+    }
+  }
+
+  .wwfp_col2 {
+    @include breakpoint(small) {
+      @include xy-cell(5);
+      @include flex-align-self(bottom);
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(5);
+      @include flex-align-self(bottom);
+    }
+
+
+    img {
+      padding: 1.25rem;
+      margin: 1rem auto 0 auto;
+      }
   }
 
   .watch {
@@ -72,18 +101,20 @@
 
   .tagline {
     @include breakpoint(small) {
-      @include xy-cell(8);
+      @include xy-cell(12);
     }
 
     @include breakpoint(medium) {
-      @include xy-cell(5);
-      padding-top: 6rem;
+      @include xy-cell(12);
+      padding-top: 1rem;
     }
   }
 
   h1 {
-    color: #fff;
+    color: $wfp-dk-blue;
     font-weight: 500;
+    line-height: .9;
+    font-family: Roboto Black;
 
     @include breakpoint(small) {
       font-size: 2.2rem;
@@ -95,15 +126,18 @@
   }
 
   h4 {
-    color: #fefefe;
-    font-weight: 300;
+    color: $wfp-lt-blue;
+    font-weight: 400;
     font-size: 1.3125rem;
+    line-height: 1.5rem;
   }
 
   .download {
     margin-top: rem-calc(20);
   }
 }
+
+
 
 // Intro
 .intro {
@@ -195,6 +229,63 @@
   }
 
   .why-foundation {
+    @include xy-cell(12);
+    margin-top: 4rem;
+  }
+}
+
+
+
+
+// wwfp_logosection
+.wwfp_logo {
+  @include xy-grid-container;
+  @include xy-grid;
+  text-align: center;
+
+  header {
+    @include xy-cell(12);
+
+    h2 {
+      font-weight: 300;
+    }
+
+    h4 {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: #777;
+    }
+  }
+
+  .wwfp_semanticx,
+  .wwfp_responsivex,
+  .wwfp_customizablex,
+  .wwfp_professionalx {
+    @include breakpoint(small) {
+      @include xy-cell(12);
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(3);
+    }
+
+    img {
+      padding: 1.25rem;
+      margin: 1rem auto 0 auto;
+    }
+
+    h3 {
+      color: #0a0a0a;
+      font-weight: 300;
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 0.9375rem;
+    }
+  }
+
+  .wwfp_why-foundation {
     @include xy-cell(12);
     margin-top: 4rem;
   }

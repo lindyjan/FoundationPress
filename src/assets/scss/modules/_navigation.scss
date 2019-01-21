@@ -38,7 +38,7 @@
 .title-bar-title {
   a {
     font-size: 1rem;
-    color: #B9B9B9;
+    color: $wfp-yellow;
   }
 }
 
@@ -62,7 +62,7 @@
   }
 
   .menu a {
-    color: #e6e6e6;
+    color: $wfp-yellow;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;

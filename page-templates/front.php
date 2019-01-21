@@ -6,18 +6,19 @@ get_header(); ?>
 
 <header class="front-hero" role="banner">
 	<div class="marketing">
-		<div class="tagline">
+	<div class="wwfp_col1">
+	<div class="tagline">
 			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
-		</div>
-
-		<div class="watch">
-			<span id="stargazers"><a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a></span>
-			<span id="twitter"><a href="https://twitter.com/olefredrik">@olefredrik</a></span>
-		</div>
+			<h4 class="subheader"><?php bloginfo('description'); ?></h4>
+			<div class="responsive-embed">
+ 				 <iframe width="420" height="315" src="https://www.youtube.com/embed/JCqERKbKbNs" frameborder="0" allowfullscreen></iframe>
+			</div>
 	</div>
-
+		</div>
+	<div class="wwfp_col2">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/wwfp-logo-web-01.svg" alt="semantic">
+	</div>
+	</div>
 </header>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
@@ -58,39 +59,30 @@ get_header(); ?>
 
 
 <section class="benefits">
-	<header>
-		<h2>Build Foundation based sites, powered by WordPress</h2>
-		<h4>Foundation is the professional choice for designers, developers and teams. <br /> WordPress is by far, <a href="http://trends.builtwith.com/cms">the world's most popular CMS</a> (currently powering 38% of the web).</h4>
-	</header>
-
 	<div class="semantic">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/semantic.svg" alt="semantic">
-		<h3>Semantic</h3>
-		<p>Everything is semantic. You can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
+		<h3>Helpful</h3>
+		<p>Our team is helpful. Whatever you need, just call and we will do our best to handle your needs or suggest someone who can.</p>
 	</div>
 
 	<div class="responsive">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/responsive.svg" alt="responsive">
-		<h3>Responsive</h3>
-		<p>You can build for small devices first. Then, as devices get larger and larger, layer in more complexity for a complete responsive design.</p>
+		<h3>Fast</h3>
+		<p>Sometimes you have an emergency, and just need someone fast. We can respond to most calls within a day. Give us a call.</p>
 
 	</div>
 
 	<div class="customizable">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/customizable.svg" alt="customizable">
-		<h3>Customizable</h3>
-		<p>You can customize your build to include or remove certain elements, as well as define the size of columns, colors, font size and more.</p>
+		<h3>Experienced</h3>
+		<p>Craig is one of the most experienced fire techs in the Salt Lake City and Wendover areas. He has worked with customers large and small. His experience is your solution.</p>
 
 	</div>
 
 	<div class="professional">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/professional.svg" alt="professional">
-		<h3>Professional</h3>
-		<p>Millions of designers and developers depend on Foundation. We have business support, training and consulting to help grow your product or service.</p>
+		<h3>Compliant</h3>
+		<p>Remaining compliant with government regulation is difficult. We can take a look at your situation and determine how to bring your equipment back into regulation.</p>
 	</div>
 
 	<div class="why-foundation">
-		<a href="/kitchen-sink">See what's in Foundation out of the box →</a>
+		<a href="/contact-us">See what we can do for you today →</a>
 	</div>
 
 </section>

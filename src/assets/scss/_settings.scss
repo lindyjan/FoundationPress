@@ -62,7 +62,7 @@
 //  56. Xy Grid
 
 @import 'util/util';
-@import 'global/colors';
+
 
 // 1. Global
 // ---------
@@ -70,21 +70,26 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
-);
-$light-gray: #e6e6e6;
+$wfp-dk-blue: #164BA0;
+$wfp-lt-blue: #1B86C1;
+$wfp-dk-orange: #BF1E2D;
+$wfp-lt-orange: #F7CE15;
+$wfp-yellow: #F7CE15;
+$light-gray: #CCDDE8;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
+$foundation-palette: (
+  primary: $wfp-dk-blue,
+  secondary: $wfp-dk-orange,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$body-font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -101,6 +106,7 @@ $global-button-cursor: auto;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
+@import 'global/colors';
 @include add-foundation-colors;
 
 // 2. Breakpoints
